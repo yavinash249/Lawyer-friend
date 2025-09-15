@@ -305,7 +305,7 @@ body {
     width: 100%;
 }
 
-.btn-primary, .btn-secondary, .btn-third {
+.btn-primary, .btn-secondary, .btn-third , .btn-four{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -366,7 +366,15 @@ body {
     background-color: #20BA5A;
     transform: translateY(-2px);
 }
-
+.btn-four{
+    background-color: #1899c0;
+    color: #fdffff;
+    border: 1px solid #1899c0;
+}
+.btn-four:hover{
+    background-color: #1899c0;
+    transform: translateY(-2px);
+}
 .btn-third:focus {
     outline: 2px solid #fdffff;
     outline-offset: 2px;
@@ -524,7 +532,7 @@ body {
         flex-wrap: wrap;
     }
     
-    .btn-primary, .btn-secondary, .btn-third {
+    .btn-primary, .btn-secondary, .btn-third , .btn-four{
         width: auto;
         max-width: 200px;
         flex: 0 1 auto;

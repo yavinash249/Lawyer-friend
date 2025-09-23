@@ -4,11 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+  /*  #1d1c22 #ffffff  #2b4c65  #95b4cc #6b8ba4  */
 body {
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background-color: #FFEAEA;
-    color: #fdffff;
+    background-color: #1d1c22;
+    color: #ffffff;
     line-height: 1.6;
     min-height: 100vh;
     overflow-x: hidden; /* Prevent horizontal scroll */
@@ -31,13 +31,13 @@ body {
 .header-title {
     font-size: clamp(1.5rem, 4vw, 1.875rem); /* Fluid typography */
     font-weight: 700;
-    color: #2d3534;
+    color: #ffffff;
     margin-bottom: 8px;
     word-wrap: break-word; /* Prevent text overflow */
 }
 
 .header-subtitle {
-    color: #1d1a1a;
+    color: #ffffff;
     font-size: clamp(0.875rem, 2.5vw, 1rem); /* Fluid typography */
     word-wrap: break-word;
 }
@@ -56,8 +56,8 @@ body {
 }
 
 .profile-card {
-    background-color: #44444E;
-    border: 1px solid #715A5A;
+    background-color: #95b4cc;
+    border: 1px solid #fdffff;
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -94,20 +94,20 @@ body {
 .profile-name {
     font-size: clamp(1.25rem, 4vw, 1.5rem); /* Fluid typography */
     font-weight: 700;
-    color: #fdffff;
+    color: #1d1c22;
     margin-top: 16px;
     word-wrap: break-word;
 }
 
 .profile-initial {
-    color: #e9c10f;
+    color: #0f30e9de;
     font-weight: 500;
     margin-bottom: 12px;
     font-size: clamp(0.875rem, 2.5vw, 1rem);
 }
 
 .qualification-badge {
-    background-color: #705e5e;
+    background-color: #2b4c65;
     color: #fdffff;
     padding: 8px 12px;
     border-radius: 8px;
@@ -118,8 +118,9 @@ body {
     max-width: 100%;
 }
 
+  /*  #1d1c22 #ffffff  #2b4c65  #95b4cc #6b8ba4  */
 .info-card {
-    background-color: #44444E;
+    background-color: #2b4c65;
     border: 1px solid #715A5A;
     border-radius: 12px;
     padding: 20px;
@@ -209,9 +210,9 @@ body {
     gap: 20px;
     margin-bottom: 32px;
 }
-
+  /*  #1d1c22 #ffffff  #2b4c65  #95b4cc #6b8ba4  */
 .contact-card, .office-card {
-    background-color: #44444E;
+    background-color: #2b4c65;
     border: 1px solid #715A5A;
     border-radius: 12px;
     padding: 20px;
@@ -273,8 +274,9 @@ body {
 }
 
 /* Call to Action Section */
+  /*  #1d1c22 #ffffff  #2b4c65  #95b4cc #6b8ba4  */
 .cta-section {
-    background-color: #715A5A;
+    background-color: #2b4c65;
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -303,6 +305,9 @@ body {
     gap: 12px;
     align-items: stretch; /* Full width on mobile */
     width: 100%;
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 16px;
 }
 
 .btn-primary, .btn-secondary, .btn-third , .btn-four{
@@ -380,6 +385,29 @@ body {
     outline-offset: 2px;
 }
 
+.btn-circle {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
+    max-width: 56px;
+    max-height: 56px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-circle i {
+    font-size: 2rem;
+    line-height: 1;
+}
+
 /* Footer */
 .footer {
     padding: 20px 0;
@@ -389,7 +417,7 @@ body {
 }
 
 .footer p {
-    color: #555;
+    color: #ffffff;
     font-size: clamp(0.75rem, 2vw, 0.875rem);
     word-wrap: break-word;
 }

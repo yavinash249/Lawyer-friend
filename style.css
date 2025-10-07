@@ -145,14 +145,14 @@ body {
 .info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: clamp(16px, 3vw, 24px);
+    gap: clamp(16px, 3vw, 28px);
     transition: grid-template-columns 0.3s, gap 0.3s;
 }
 
 @media (max-width: 767px) {
     .info-grid {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 20px;
     }
 }
 
@@ -224,6 +224,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: clamp(16px, 3vw, 32px);
     margin-bottom: 32px;
+    margin-top: 32px;
     transition: grid-template-columns 0.3s, gap 0.3s;
 }
 
@@ -496,8 +497,8 @@ body {
         padding: 12px;
     }
     .profile-photo img {
-        width: 120px;
-        height: 120px;
+        width: 280px;
+        height: 280px;
     }
     .btn-circle {
         width: 44px;

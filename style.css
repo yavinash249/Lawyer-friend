@@ -149,6 +149,7 @@ body {
     transition: grid-template-columns 0.3s, gap 0.3s;
 }
 
+
 @media (max-width: 767px) {
     .info-grid {
         grid-template-columns: 1fr;
@@ -381,8 +382,8 @@ body {
 
 .btn-secondary {
     border: 1px solid #fdffff;
-    color: #fdffff;
-    background-color: transparent;
+    color: #b2f1f1;
+    background-color: #37353E;
 }
 
 .btn-secondary:hover {

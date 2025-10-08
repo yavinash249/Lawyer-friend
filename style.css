@@ -100,7 +100,7 @@ body {
 }
 
 .profile-name {
-    font-size: clamp(1.25rem, 4vw, 1.5rem); /* Fluid typography */
+    font-size: clamp(1.8rem, 5vw, 2rem); /* Fluid typography */
     font-weight: 700;
     color: #1d1c22;
     margin-top: 16px;
@@ -111,7 +111,7 @@ body {
     color: #0f30e9de;
     font-weight: 500;
     margin-bottom: 12px;
-    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    font-size: clamp(0.980rem, 2.5vw, 1rem);
 }
 
 .qualification-badge {
@@ -285,6 +285,18 @@ body {
     display: inline-block;
     max-width: 100%;
 }
+.office-link{
+    color: #fdffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    word-break: break-word;
+    display: inline-block;
+    max-width: fit-content;
+}
+.office-link:hover{
+    color: #eccd1b;
+    text-decoration: underline;
+}
 
 .contact-link:hover {
     color: #eccd1b;
@@ -342,7 +354,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
-    min-width: 140px;
+    min-width: 150px;
     border: 1px solid transparent;
     font-size: clamp(0.875rem, 2.5vw, 1rem);
     width: 100%; /* Full width on mobile */
@@ -409,6 +421,9 @@ body {
 }
 
 .btn-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     width: clamp(44px, 7vw, 56px);
     height: clamp(44px, 7vw, 56px);
@@ -417,9 +432,6 @@ body {
     max-width: 56px;
     max-height: 56px;
     padding: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     font-size: clamp(1.5rem, 3vw, 2rem);
     margin: 0 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -429,6 +441,13 @@ body {
 .btn-circle i {
     font-size: inherit;
     line-height: 1;
+}
+
+.gmail-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
 }
 
 /* Footer */

@@ -28,8 +28,8 @@
                     <div class="profile-photo">
                        <img src="saket.jpg" alt="">
                     </div>
-                    <h2 class="profile-name" data-testid="text-full-name">Saket S Upadhyay</h2>
-                    <p class="profile-initial" data-testid="text-initial-name">Adv S.S Upadhyay</p>
+                    <h2 class="profile-name" data-testid="text-full-name">Saket S. Upadhyay</h2>
+                    <p class="profile-initial" data-testid="text-initial-name">Adv District & Session Court Surat</p>
                     <div class="qualification-badge">
                         <span data-testid="text-qualification">B.com LLB (HONS)</span>
                     </div>
@@ -43,9 +43,16 @@
                         <i class="fa-solid fa-phone"></i>
                     </a>
                     <a href="mailto:saketupd123@gmail.com" class="btn-circle btn-secondary" data-testid="button-send-email" title="Email">
-                        <i class="fa-solid fa-envelope"></i>
+                        <!-- Gmail SVG Icon -->
+                        <svg class="gmail-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 49 49">
+        <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path>
+        <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path>
+        <polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon>
+        <path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path>
+        <path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
+    </svg>
                     </a>
-                    <a href="https://wa.me/917573957710" target="_blank" class="btn-circle btn-third" title="WhatsApp">
+                    <a href="https://wa.me/917573957710?text=Hello,%20Saket%20upadhyay%20I%20would%20like%20a%20legal%20asstitance" target="_blank" class="btn-circle btn-third" title="WhatsApp">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/saket-upadhyay-8222a6384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn-circle btn-four" title="LinkedIn">
@@ -57,21 +64,18 @@
                 <div class="info-card">
                     <div class="info-grid">
                         <!-- Practice Information -->
-                        <div class="info-section">
+                        <!-- <div class="info-section">
                             <h3 class="section-title">
                                 <span class="icon">⚖️</span>
                                 Practice Information
                             </h3>
-                            <div class="info-item">
-                                <p class="label">Place of Practice</p>
-                                <p class="value" data-testid="text-place-of-practice">District & Session Court Surat</p>
-                            </div>
-                        </div>
+                            
+                        </div> -->
 
                         <!-- Specialization -->
                         <div class="info-section">
                             <h3 class="section-title">
-                                <span class="icon">⭐</span>
+                                <span class="icon">⚖️</span>
                                 Specialization Areas
                             </h3>
                             <ul class="specialization-list">
@@ -139,14 +143,20 @@
                         <div class="office-icon">🏢</div>
                         <div class="office-details">
                             <p class="label">Head Office</p>
-                            <p class="value" data-testid="text-head-office">Police Colony, Pandesara, Surat</p>
+                            <p class="value" data-testid="text-head-office">
+                                <a href="https://maps.app.goo.gl/6dKuhc2WxDdgLpuCA" class="office-link" > 
+                                    Office No.2, Plot No. 1, RadheShyam Nagar, Police Colony Circle, Pandesara-Althan Road, Surat
+                                </a>
+                            </p>
                         </div>
                     </div>
                     <div class="office-item">
                         <div class="office-icon"> 📍 </div>
                         <div class="office-details">
                             <p class="label">Branch Office</p>
-                            <p class="value" data-testid="text-branch-office">Capital Square, Parvat Patiya, Surat</p>
+                            <p class="value" data-testid="text-branch-office"> <a href="https://maps.app.goo.gl/QHiyAmwT8cGsyt8TA" class="office-link">
+                                 218, Capital Square, Near Sanskruti Market, B/H Ganga Hotel, Parvat Patiya To Godadara Road, Surat
+                            </a></p>
                         </div>
                     </div>
                 </div>
@@ -160,8 +170,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>© 2025 Saket Suresh Upadhyay. Professional Legal Services. All rights reserved.</p>
+            <p>© <span id="current-year"></span> Saket Suresh Upadhyay. Professional Legal Services. All rights reserved.</p>
         </div>
     </footer>
 </body>
+<script>
+    //set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title Bar Game</title>
+</head>
+<body>
+  <h1>Title Bar Game</h1>
+  <p>Press the <strong>Spacebar</strong> to catch the "O" when it's in the middle of the title bar!</p>
+  <p>Score: <span id="score">0</span></p>
+  <p>Message: <span id="message">Game running...</span></p>
+
+  <script>
+    let score = 0;
+    let position = 0;
+    let track = "----------"; // The "track" for the character to move on
+    let gameRunning = true;
+    const trackLength = track.length;
+    const targetPosition = Math.floor(trackLength / 2); // Middle of the track
+    const character = "O";
+
+    // Function to update the title bar
+    function updateTitle() {
+      if (!gameRunning) return;
+
+      // Create the title by inserting the character at the current position
+      let title = track.substring(0, position) + character + track.substring(position + 1);
+      document.title = title;
+
+      // Move the character
+      position = (position + 1) % trackLength;
+
+      // Check if the character is at the start again (one loop completed)
+      if (position === 0) {
+        // Optionally reset or penalize if the player missed the catch
+        document.getElementById("message").textContent = "Missed! Try again.";
+      }
+    }
+
+    // Function to handle user input (spacebar press)
+    function handleInput(event) {
+      if (!gameRunning) return;
+
+      if (event.code === "Space") {
+        // Check if the character is at the target position
+        if (position === targetPosition || position === targetPosition + 1) {
+          score++;
+          document.getElementById("score").textContent = score;
+          document.getElementById("message").textContent = "Caught it! Nice!";
+        } else {
+          document.getElementById("message").textContent = "Missed! Try again.";
+        }
+      }
+    }
+
+    // Update the title every 500ms
+    setInterval(updateTitle, 500);
+
+    // Listen for keypress events
+    document.addEventListener("keydown", handleInput);
+
+    // Initial title setup
+    document.title = track.substring(0, position) + character + track.substring(position + 1);
+  </script>
+</body>
+</html>

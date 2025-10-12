@@ -100,7 +100,7 @@ body {
 }
 
 .profile-name {
-    font-size: clamp(1.8rem, 5vw, 2rem); /* Fluid typography */
+    font-size: clamp(1.6rem, 5vw, 1.6rem); /* Fluid typography */
     font-weight: 700;
     color: #1d1c22;
     margin-top: 16px;
